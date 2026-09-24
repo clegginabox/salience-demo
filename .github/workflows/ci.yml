@@ -1,0 +1,13 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  sleep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep for 20 seconds
+        run: sleep 20
